@@ -148,11 +148,19 @@ input[type="checkbox"] {
  flex-direction: column;
  align-items: center;
   }
+  .add-form
+button,
+select,
+input {font-size: 1.2rem;}
+.list select,.list button{
+  font-size: 1.2rem;
+}
   .stats {
 
   font-weight: 600;
   font-size: 2rem;
 }
+
 }
 
 @media screen and (max-width:767px) {
@@ -166,4 +174,8 @@ input[type="checkbox"] {
     flex-direction: column;
     gap: 0.8rem;
   }
+  .list,.stats{
+  font-size: 1.5rem;
+}
+
 }
