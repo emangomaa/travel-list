@@ -12,7 +12,7 @@ const PackingList = ({ items, onDeleteItem, onClearList, onToggleItem }) => {
     sortedItems = items.slice().sort((a, b) => a.packed - b.packed);
   return (
     <div className="list">
-      <ul style={items.length >= 10 ? { overflowY: "scroll" } : {}}>
+      <ul style={items.length >= 5 ? { overflowY: "scroll" } : {}}>
         {items.length ? (
           sortedItems.map((item) => (
             <Item
